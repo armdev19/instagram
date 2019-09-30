@@ -9,7 +9,7 @@ class ShareActivity : BaseActivity(navNumber = 2) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_home)
 
         setupBottomNav()
         Log.d(TAG, "onCreate")

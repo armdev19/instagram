@@ -9,7 +9,7 @@ class HomeActivity : BaseActivity(navNumber = 0) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
+        setContentView(R.layout.activity_home)
         Log.d(TAG, "onCreate")
 
         setupBottomNav()
