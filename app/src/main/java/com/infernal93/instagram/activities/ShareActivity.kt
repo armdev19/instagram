@@ -1,7 +1,8 @@
-package com.infernal93.instagram
+package com.infernal93.instagram.activities
 
 import android.os.Bundle
 import android.util.Log
+import com.infernal93.instagram.R
 
 class ShareActivity : BaseActivity(navNumber = 2) {
     private val TAG = "ShareActivity"

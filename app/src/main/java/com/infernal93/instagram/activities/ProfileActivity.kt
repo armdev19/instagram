@@ -1,8 +1,9 @@
-package com.infernal93.instagram
+package com.infernal93.instagram.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import com.infernal93.instagram.R
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class ProfileActivity : BaseActivity(navNumber = 4) {

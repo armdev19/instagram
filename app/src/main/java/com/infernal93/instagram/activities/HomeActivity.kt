@@ -1,9 +1,11 @@
-package com.infernal93.instagram
+package com.infernal93.instagram.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
+import com.infernal93.instagram.R
+import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : BaseActivity(navNumber = 0) {
     private val TAG = "HomeActivity"
@@ -18,13 +20,21 @@ class HomeActivity : BaseActivity(navNumber = 0) {
 
 
         mAuth = FirebaseAuth.getInstance()
-        mAuth.signOut()
-       // mAuth.signInWithEmailAndPassword("armdev19@gmail.com", "123456")
-         //   .addOnCompleteListener {
-           //     if(it.isSuccessful) {
-             //       Log.d(TAG, "signIn: success")
-               // } else Log.e(TAG, "signIn: failure", it.exception)
-           // }
+        sign_out_text.setOnClickListener {
+            mAuth.signOut()
+        }
+        mAuth.addAuthStateListener {
+            if (it.currentUser == null) {
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+            }
+        }
+        // mAuth.signInWithEmailAndPassword("armdev19@gmail.com", "123456")
+        //   .addOnCompleteListener {
+        //     if(it.isSuccessful) {
+        //       Log.d(TAG, "signIn: success")
+        // } else Log.e(TAG, "signIn: failure", it.exception)
+        // }
 
     }
 

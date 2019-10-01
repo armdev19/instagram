@@ -1,10 +1,11 @@
-package com.infernal93.instagram
+package com.infernal93.instagram.activities
 
 import android.os.Bundle
 import android.util.Log
+import com.infernal93.instagram.R
 
-class LikesActivity : BaseActivity(navNumber = 3) {
-    private val TAG = "LikesActivity"
+class SearchActivity : BaseActivity(navNumber = 1) {
+    private val TAG = "SearchActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

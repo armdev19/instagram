@@ -1,8 +1,9 @@
-package com.infernal93.instagram
+package com.infernal93.instagram.activities
 
 import android.content.Intent
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.infernal93.instagram.R
 import kotlinx.android.synthetic.main.bottom_navigation_view.*
 
 
